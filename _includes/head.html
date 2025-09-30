@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+{% seo %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+<script>
+    (function () {
+        try {
+            var stored = localStorage.getItem('theme');
+            var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+            var theme = stored || (prefersLight ? 'light' : 'dark');
+            document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) { }
+    })();
+</script>
+
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+<script defer src="{{ '/assets/js/theme.js' | relative_url }}"></script>

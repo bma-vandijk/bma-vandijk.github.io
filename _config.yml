@@ -1,3 +1,48 @@
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+title: Bram van Dijk
+description: Personal site
+url: "https://bma-vandijk.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /blog/:year/:month/:day/:title/
+timezone: Europe/Amsterdam
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+
+# Navigation — items defined in _data/navigation.yml
+nav_data: navigation
+
+# Author info
+author:
+  name: "Bram van Dijk"
+  email: "bma-vandijk@hotmail.com"
+  github: "bma-vandijk"
+  linkedin: "bram-van-dijk-869768266"
+  scholar: "kIRCVq4AAAAJ"
+  employer_name: "Leiden University Medical Center"
+  employer_url: "https://healthcampusdenhaag.nl/nl/"
+
+# Exclude from processing
+exclude:
+  - node_modules
+  - README.md
+  - Gemfile
+  - Gemfile.lock

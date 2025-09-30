@@ -1,0 +1,13 @@
+<header class="site-header">
+    <div class="profile-section">
+        <img src="{{ '/assets/images/bram_voorlinden.png' | relative_url }}" alt="Profile picture"
+            class="profile-picture">
+    </div>
+    <div class="brand">
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <p class="site-tagline">{{ site.description }}</p>
+    </div>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark" title="Toggle theme">
+        <span class="icon" aria-hidden="true">☼</span>
+    </button>
+</header>

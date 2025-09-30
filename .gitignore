@@ -1,0 +1,32 @@
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby
+.bundle/
+vendor/
+
+# macOS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+tmp/
+*.tmp
